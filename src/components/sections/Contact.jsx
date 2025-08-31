@@ -102,27 +102,43 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer; // makes it clickable
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: hsla(271, 100%, 45%, 1);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
 `;
+
 
 const Contact = () => {
   const form = useRef();
-  const handelSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_ojxhph9",
+        "template_h2u5ulo",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "6TSgzXHX57b5hKWTT"
       )
       .then(
         (result) => {
-          alert("Message Sent");
-          form.current.result();
+          alert("Message Sent ✅");
+          form.current.reset();
         },
         (error) => {
-          alert(error);
-        }
+          console.log(error); 
+          alert("Failed ❌: " + (error.text || "Something went wrong"));
+}
       );
   };
   return (
@@ -136,11 +152,11 @@ const Contact = () => {
         >
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handelSubmit}>
+        <ContactForm as="form" ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
+          <ContactInput placeholder="Your Email" name="email" />
+          <ContactInput placeholder="Your Name" name="name" />
+          <ContactInput placeholder="Subject" name="title" />
           <ContactInputMessage placeholder="Message" name="message" rows={4} />
           <ContactButton type="submit" value="Send" />
         </ContactForm>

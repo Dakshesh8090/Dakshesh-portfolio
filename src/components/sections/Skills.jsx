@@ -6,8 +6,8 @@ import { Tilt } from "react-tilt";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-contnet: center;
-  position: rlative;
+  justify-content: center;
+  position: relative;
   z-index: 1;
   align-items: center;
 `;
@@ -25,6 +25,7 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 `;
+
 const Title = styled.div`
   font-size: 52px;
   text-align: center;
@@ -36,6 +37,7 @@ const Title = styled.div`
     font-size: 32px;
   }
 `;
+
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
@@ -51,68 +53,50 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
 `;
 
-const Skill = styled.div`
-  width: 100%;
-  max-width: 500px;
-  background-color: rgba(17, 25, 40, 0.83);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  padding: 18px 36px;
-  @media (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
-  }
-
-  @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
-  }
-`;
-
-const SkillTitle = styled.div`
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-align: center;
-  color: ${({ theme }) => theme.text_secondary};
-`;
-
-const SkillList = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-`;
 const SkillItem = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
+  width: 250px;
+  padding: 16px;
   border: 1px solid ${({ theme }) => theme.text_primary + 80};
   border-radius: 12px;
-  padding: 12px 16px;
+  background: rgba(17, 25, 40, 0.83);
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`;
+
+const SkillInfo = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
 `;
+
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+`;
+
+const ProgressBar = styled.div`
+  width: 100%;
+  height: 10px;
+  background: #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+`;
+
+const Progress = styled.div`
+  width: ${({ level }) => level}%;
+  height: 100%;
+  background: ${({ color }) => color || "linear-gradient(90deg, #4facfe, #00f2fe)"};
+  border-radius: 10px;
+  transition: width 1.2s ease-in-out;
 `;
 
 const Skills = () => {
@@ -130,19 +114,17 @@ const Skills = () => {
         </Desc>
 
         <SkillsContainer>
-          {skills.map((skill, index) => (
-            <Tilt>
-              <Skill key={`skill-${index}`}>
-                <SkillTitle>{skill.title}</SkillTitle>
-                <SkillList>
-                  {skill.skills.map((item, index_x) => (
-                    <SkillItem key={`skill-x-${index_x}`}>
-                      <SkillImage src={item.image} />
-                      {item.name}
-                    </SkillItem>
-                  ))}
-                </SkillList>
-              </Skill>
+          {skills.map((item, index) => (
+            <Tilt key={`skill-${index}`}>
+              <SkillItem>
+                <SkillInfo>
+                  <SkillImage src={item.image} alt={item.name} />
+                  {item.name} ({item.level}%)
+                </SkillInfo>
+                <ProgressBar>
+                  <Progress level={item.level} color={item.color} />
+                </ProgressBar>
+              </SkillItem>
             </Tilt>
           ))}
         </SkillsContainer>

@@ -45,7 +45,7 @@ function App() {
             <Hero />
             <Wrapper>
               <Skills />
-              <Experience />
+              
             </Wrapper>
             <Projects />
             <Wrapper>
