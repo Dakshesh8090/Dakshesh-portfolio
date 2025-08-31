@@ -77,11 +77,6 @@ const ToggleButton = styled.div`
   background:  ${theme.primary + 20};
   `}
 `;
-const Divider = styled.div`
-  width: 1.5px;
-  background: ${({ theme }) => theme.primary};
-`;
-
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
