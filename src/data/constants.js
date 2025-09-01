@@ -295,8 +295,8 @@ export const projects = [
       "Netlify"
     ],
     category: "web app",
-    github: "https://github.com/Dakshesh8090/Chit-chat-app",
-    webapp: "https://chitchatmessage.netlify.app/",
+    github: "https://chitchatmessage.netlify.app/",
+    webapp: "",
   },
   {
     id: 9,
