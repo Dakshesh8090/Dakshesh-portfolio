@@ -7,7 +7,6 @@ import mongoLogo from "../assets/logos/mongodb-original.svg";
 import mysqlLogo from "../assets/logos/mysql-original.svg";
 import hibernatelog from "../assets/logos/hibernate-logo.png";
 import dockerLogo from "../assets/logos/docker-original.svg";
-import gitLogo from "../assets/logos/github-original.svg";
 import renderLogo from "../assets/logos/render-logo.png"; 
 import netlifyLogo from "../assets/logos/netlify-original.svg";
 import vscodeLogo from "../assets/logos/vscode-original.svg";
@@ -21,6 +20,7 @@ import todophoto from "../assets/ProjectPhotos/todo.png";
 import canvalogo from "../assets/logos/canva.png";
 import figmalogo from "../assets/logos/figma.png";
 import workbenchlogo from "../assets/logos/workbench-logo.png";
+import githublog from "../assets/logos/github-white.png";
 
 
 
@@ -92,7 +92,7 @@ export const skills = [
   },
   {
     name: "Git/GitHub",
-    image: gitLogo,
+    image: githublog,
 
   },
   {
