@@ -20,6 +20,8 @@ import smartmailphoto from "../assets/ProjectPhotos/SmartMail.png";
 import todophoto from "../assets/ProjectPhotos/todo.png";
 import canvalogo from "../assets/logos/canva.png";
 import figmalogo from "../assets/logos/figma.png";
+import workbenchlogo from "../assets/logos/workbench-logo.png";
+
 
 
 
@@ -46,110 +48,92 @@ export const skills = [
   {
     name: "Java",
     image: javaLogo,
-    level: 85,
-    color: "#E76F00", // Java orange
+
   },
   {
     name: "C++",
     image: cppLogo,
-    level: 70,
-    color: "#00599C", // C++ blue
+
   },
   {
     name: "React Js",
     image: reactLogo,
-    level: 30,
-    color: "#61DBFB", // React cyan
+
   },
   {
     name: "Spring",
     image: springLogo,
-    level: 70,
-    color: "#6DB33F", // Spring green
+
   },
   {
     name: "Spring Boot",
     image: springBootLogo, 
-    level: 70,
-    color: "#3C873A", // Spring Boot darker green
+
   },
   {
     name: "MongoDB",
     image: mongoLogo,
-    level: 70,
-    color: "#4DB33D", // MongoDB green
+
   },
   {
     name: "MySQL",
     image: mysqlLogo,
-    level: 85,
-    color: "#4479A1", // MySQL blue
+
   },
   {
     name: "Hibernate",
     image: hibernatelog,
-    level: 60,
-    color: "#BCA22C", // Hibernate gold/yellow
+
   },
   {
     name: "Docker",
     image: dockerLogo,
-    level: 75,
-    color: "#2496ED", // Docker blue
+
   },
   {
     name: "Git/GitHub",
     image: gitLogo,
-    level: 80,
-    color: "#F05032", // Git orange
+
   },
   {
     name: "Render",
     image: renderLogo, // placeholder
-    level: 75,
-    color: "#C90000", // Render (placeholder color)
+
   },
   {
     name: "Netlify",
     image: netlifyLogo,
-    level: 75,
-    color: "#00C7B7", // Netlify turquoise
+
   },
   {
     name: "VS Code",
     image: vscodeLogo,
-    level: 75,
-    color: "#0078D7", // VS Code blue
+    
   },
   {
     name: "Intellij IDEA",
     image: intellijLogo,
-    level: 75,
-    color: "#F10095", // IntelliJ pink
+    
   },
   {
     name: "Postman",
     image: postmanLogo,
-    level: 75,
-    color: "#F74600", // Postman orange
+   
   },
   {
     name: "Workbench",
-    image: mysqlLogo,
-    level: 80,
-    color: "#4479A1", // MySQL blue
+    image: workbenchlogo,
+    
   },
   {
     name: "Canva",
     image: canvalogo,
-    level: 70,
-    color: "#ff00f2ff", // MySQL blue
+   
   },
   {
     name: "Figma",
     image: figmalogo,
-    level: 70,
-    color: "#4c0080ff", // MySQL blue
+    
   },
 ];
 

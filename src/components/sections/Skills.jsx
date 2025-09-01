@@ -58,45 +58,37 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillItem = styled.div`
-  width: 250px;
-  padding: 16px;
+  width: 120px;
+  height: 120px;
   border: 1px solid ${({ theme }) => theme.text_primary + 80};
   border-radius: 12px;
   background: rgba(17, 25, 40, 0.83);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-`;
-
-const SkillInfo = styled.div`
-  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_primary};
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(23, 92, 230, 0.3) 0px 6px 20px;
+  }
 `;
 
 const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 `;
 
-const ProgressBar = styled.div`
-  width: 100%;
-  height: 10px;
-  background: #2c2c2c;
-  border-radius: 10px;
-  overflow: hidden;
-`;
-
-const Progress = styled.div`
-  width: ${({ level }) => level}%;
-  height: 100%;
-  background: ${({ color }) => color || "linear-gradient(90deg, #4facfe, #00f2fe)"};
-  border-radius: 10px;
-  transition: width 1.2s ease-in-out;
+const SkillName = styled.div`
+  font-size: 14px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+  text-align: center;
 `;
 
 const Skills = () => {
@@ -104,11 +96,7 @@ const Skills = () => {
     <Container id="Skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
+        <Desc style={{ marginBottom: "40px" }}>
           Here are some of my skills on which I have been working on for the
           past 3 years.
         </Desc>
@@ -117,13 +105,8 @@ const Skills = () => {
           {skills.map((item, index) => (
             <Tilt key={`skill-${index}`}>
               <SkillItem>
-                <SkillInfo>
-                  <SkillImage src={item.image} alt={item.name} />
-                  {item.name} ({item.level}%)
-                </SkillInfo>
-                <ProgressBar>
-                  <Progress level={item.level} color={item.color} />
-                </ProgressBar>
+                <SkillImage src={item.image} alt={item.name} />
+                <SkillName>{item.name}</SkillName>
               </SkillItem>
             </Tilt>
           ))}

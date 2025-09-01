@@ -7,6 +7,7 @@ import {
   LinkedIn,
   WhatsApp,
 } from "@mui/icons-material";
+import { FaGithub } from "react-icons/fa";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -101,6 +102,9 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="_blank">
+            <FaGithub />
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; 2024 Dakshesh Singh Sherawat. All rights reserved.</Copyright>

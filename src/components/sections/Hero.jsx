@@ -178,18 +178,35 @@ const ResumeButton = styled.a`
 `;
 
 const Img = styled.img`
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  display: block;
   max-width: 400px;
-  max-height: 400px;
-  border: 2px solid ${({ theme }) => theme.primary};
+  height: auto;
+  border: 3px solid rgba(2, 2, 59, 1)(0, 0, 112, 1);
+  border-radius: 12px; /* Rectangle with slight rounding */
+  object-fit: contain;
+
+  /* Default look */
+  box-shadow: 0px 8px 25px rgba(2, 2, 59, 1)(0, 0, 112, 1);
+  transition: all 0.4s ease-in-out;
+
+  /* Hover effects */
+  &:hover {
+    transform: scale(1.08); /* simple zoom */
+    box-shadow: 0px 0px 25px ${({ theme }) => theme.primary}; /* glowing border */
+  }
 
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
   }
+
+  @media (max-width: 480px) {
+    max-width: 200px;
+    max-height: 200px;
+  }
 `;
+
+
 
 const HeroBg = styled.div`
   position: absolute;
@@ -256,7 +273,7 @@ const Hero = () => {
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <Img src={HeroImg} alt="Rishav Chanda" />
+                  <Img src={HeroImg} alt="Dakshesh Singh Sherawat" />
                 </Tilt>
               </motion.div>
             </HeroRightContainer>
