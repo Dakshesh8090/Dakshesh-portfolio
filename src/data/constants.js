@@ -21,6 +21,8 @@ import canvalogo from "../assets/logos/canva.png";
 import figmalogo from "../assets/logos/figma.png";
 import workbenchlogo from "../assets/logos/workbench-logo.png";
 import githublog from "../assets/logos/github-white.png";
+import EduBlogphoto from "../assets/ProjectPhotos/EduBlog.png";
+import HMSphoto from "../assets/ProjectPhotos/HMS.png";
 
 
 
@@ -342,7 +344,7 @@ export const projects = [
     description:
       "Educational Blog is a user-friendly educational blog platform designed to simplify academic collaboration among students. It provides a centralized space where students can upload, organize, and access notes in blog format across different categories, making studying more efficient and community driven.",
     image:
-      "",
+      EduBlogphoto,
     tags: [
       "JSP",
       "Servlet",
@@ -361,7 +363,8 @@ export const projects = [
     date: "Aug 2024 - Sept 2024",
     description:
       "A Hospital Management System (HMS) is a comprehensive software solution designed to streamline and automate the administrative, clinical, and financial operations of a healthcare facility. It serves as a centralized platform that integrates various functions such as patient registration, appointment scheduling, doctor's registration.",
-    image:"",
+    image:
+      HMSphoto,
     tags: ["Java", "Jdbc", "MySQL"],
     github: "https://github.com/Dakshesh8090/Hospital-Management-System",
   },
