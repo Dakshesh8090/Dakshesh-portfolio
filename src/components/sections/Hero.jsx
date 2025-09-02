@@ -179,32 +179,37 @@ const ResumeButton = styled.a`
 
 const Img = styled.img`
   display: block;
-  max-width: 400px;
+  width: 100%;
+  max-width: 430px;  /* Laptop/Desktop */
+  min-width: 220px;  /* Mobile me bhi readable size */
   height: auto;
-  border: 3px solid rgba(2, 2, 59, 1)(0, 0, 112, 1);
-  border-radius: 12px; /* Rectangle with slight rounding */
-  object-fit: contain;
+  border-radius: 12px;
+  object-fit: cover;
 
-  /* Default look */
-  box-shadow: 0px 8px 25px rgba(2, 2, 59, 1)(0, 0, 112, 1);
+  box-shadow: 0px 8px 25px rgba(2, 2, 59, 0.4);
   transition: all 0.4s ease-in-out;
 
-  /* Hover effects */
   &:hover {
-    transform: scale(1.08); /* simple zoom */
-    box-shadow: 0px 0px 25px ${({ theme }) => theme.primary}; /* glowing border */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px ${({ theme }) => theme.primary};
+  }
+
+  @media (max-width: 960px) {
+    max-width: 300px; 
+    min-width: 200px;
   }
 
   @media (max-width: 640px) {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 250px; 
+    min-width: 180px;
   }
 
   @media (max-width: 480px) {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 220px; 
+    min-width: 170px;
   }
 `;
+
 
 
 

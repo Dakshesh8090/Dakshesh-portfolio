@@ -28,7 +28,7 @@ import HMSphoto from "../assets/ProjectPhotos/HMS.png";
 
 
 export const Bio = {
-  name: "Dakshesh Singh Sherawat",
+  name: "Dakshesh",
   roles: [
     "Backend Developer",
     "Java Developer",
