@@ -181,7 +181,7 @@ const Img = styled.img`
   display: block;
   width: 100%;
   max-width: 430px;  /* Laptop/Desktop */
-  min-width: 220px;  /* Mobile me bhi readable size */
+  min-width: 250px;  /* Mobile me bhi readable size */
   height: auto;
   border-radius: 12px;
   object-fit: cover;
