@@ -39,7 +39,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Dakshesh8090",
   resume:
-    "https://drive.google.com/file/d/1v71-SZsNpM5ROzNzatKuTcqnFHBUMDDv/view?usp=sharing",
+    "https://drive.google.com/drive/folders/1L49dXrWsmts7fscprjTZdkY-F-RMqzsE?usp=sharing",
   linkedin: "https://www.linkedin.com/in/dakshesh-singh-sherawat-72681230b/",
   whatsapp: "https://wa.me/917974582621",
   insta: "https://www.instagram.com/daksheshh_/",
