@@ -23,7 +23,8 @@ import workbenchlogo from "../assets/logos/workbench-logo.png";
 import githublog from "../assets/logos/github-white.png";
 import EduBlogphoto from "../assets/ProjectPhotos/EduBlog.png";
 import HMSphoto from "../assets/ProjectPhotos/HMS.png";
-
+import syncspacephoto from "../assets/ProjectPhotos/SyncSpace.png";
+import daycheckphoto from "../assets/ProjectPhotos/DayCheck.png";
 
 
 
@@ -326,7 +327,7 @@ export const projects = [
     downloadextension: "https://drive.google.com/drive/folders/1lKPqRB5XT-jnb4Y-J6VI3mgR7V0Cilx4?usp=sharing",
   },
   {
-    id: 0,
+    id: 3,
     title: "To-Do Application",
     date: "Nov 2024 - Dec 2024",
     description:
@@ -368,33 +369,34 @@ export const projects = [
     tags: ["Java", "Jdbc", "MySQL"],
     github: "https://github.com/Dakshesh8090/Hospital-Management-System",
   },
-  /*
+
   {
-    id: 3,
-    title: "Buckoid",
-    date: "Dec 2021 - Apr 2022",
+    id: 13,
+    title: "SyncSpace",
+    date: "Aug 2025 - Oct 2025",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
+      " A collaborative workspace that enables teams to plan, assign, and track work seamlessly while integrating real-time communication, issue tracking, and subscription-based features.",
     image:
-      "https://camo.githubusercontent.com/3ad28aa710d18525f1fc87de056ed53c706d09979589bfd5a773df36653bad38/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+      syncspacephoto,
+    tags: ["SpringBoot", "React.js", "MySQL" ],
+    github: "https://github.com/Dakshesh8090/SyncSpace",
+    // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
   {
-    id: 10,
-    title: "Job Finding App",
-    date: "Jun 2023 - Jul 2023",
+    id: 12,
+    title: "Day Check",
+    date: "Nov 2025 - Nov 2025",
     description:
-      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
+      "It's a weather forecasting web app that provides real-time weather updates, forecasts based on user location, utilizing a sleek and intuitive interface ",
     image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["React Native", "JavaScript", "Axios"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Job-finder-App",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
+      daycheckphoto,
+    tags: ["React.js", "Axios"],
+    category: "web app",
+    github: "https://github.com/Dakshesh8090/weather_app",
+    webapp: "https://daychk.netlify.app",
   },
+
+    /*
   {
     id: 4,
     title: "Whatsapp Clone",
