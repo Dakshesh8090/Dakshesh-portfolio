@@ -23,8 +23,8 @@ import workbenchlogo from "../assets/logos/workbench-logo.png";
 import githublog from "../assets/logos/github-white.png";
 import EduBlogphoto from "../assets/ProjectPhotos/EduBlog.png";
 import HMSphoto from "../assets/ProjectPhotos/HMS.png";
-import syncspacephoto from "../assets/ProjectPhotos/SyncSpace.png";
-import daycheckphoto from "../assets/ProjectPhotos/DayCheck.png";
+import syncspacephoto from "../assets/ProjectPhotos/syncspace.png";
+import daycheckphoto from "../assets/ProjectPhotos/daychk.png";
 
 
 
@@ -279,6 +279,31 @@ export const education = [
 
 export const projects = [
   {
+    id: 13,
+    title: "SyncSpace",
+    date: "Aug 2025 - Oct 2025",
+    description:
+      " A collaborative workspace that enables teams to plan, assign, and track work seamlessly while integrating real-time communication, issue tracking, and subscription-based features.",
+    image:
+      syncspacephoto,
+    tags: ["SpringBoot", "React.js", "MySQL" ],
+    github: "https://github.com/Dakshesh8090/SyncSpace",
+    // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+  },
+  {
+    id: 12,
+    title: "Day Check",
+    date: "Nov 2025 - Nov 2025",
+    description:
+      "It's a weather forecasting web app that provides real-time weather updates, forecasts based on user location, utilizing a sleek and intuitive interface ",
+    image:
+      daycheckphoto,
+    tags: ["React.js", "Axios"],
+    category: "web app",
+    github: "https://github.com/Dakshesh8090/weather_app",
+    webapp: "https://daychk.netlify.app",
+  },
+  {
     id: 11,
     title: "Chit Chat App",
     date: "Jun 2025 - July 2025",
@@ -370,31 +395,7 @@ export const projects = [
     github: "https://github.com/Dakshesh8090/Hospital-Management-System",
   },
 
-  {
-    id: 13,
-    title: "SyncSpace",
-    date: "Aug 2025 - Oct 2025",
-    description:
-      " A collaborative workspace that enables teams to plan, assign, and track work seamlessly while integrating real-time communication, issue tracking, and subscription-based features.",
-    image:
-      syncspacephoto,
-    tags: ["SpringBoot", "React.js", "MySQL" ],
-    github: "https://github.com/Dakshesh8090/SyncSpace",
-    // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
-  },
-  {
-    id: 12,
-    title: "Day Check",
-    date: "Nov 2025 - Nov 2025",
-    description:
-      "It's a weather forecasting web app that provides real-time weather updates, forecasts based on user location, utilizing a sleek and intuitive interface ",
-    image:
-      daycheckphoto,
-    tags: ["React.js", "Axios"],
-    category: "web app",
-    github: "https://github.com/Dakshesh8090/weather_app",
-    webapp: "https://daychk.netlify.app",
-  },
+  
 
     /*
   {
